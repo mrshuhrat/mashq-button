@@ -1,0 +1,78 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Arial", "Roboto" sans-serif;
+  line-height: 1.5;
+}
+.img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  margin-top: 70px;
+  max-width: 1048px;
+  padding: 0 24px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.button {
+  max-width: 100%;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+}
+
+.button-span {
+  position: relative;
+  z-index: 1;
+  max-width: 100%;
+  display: inline-flex;
+  padding: 15px 30px;
+  
+}
+
+.button-span__span {
+  display: inline-block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.button-span__span::before {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  width: 25px;
+  height: 25px;
+  content: "";
+  margin-right: 10px;
+  background-image: url("../img/pet.png");
+  background-size: contain;
+  background-position: center center;
+} 
